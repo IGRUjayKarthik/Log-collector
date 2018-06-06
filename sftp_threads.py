@@ -86,8 +86,8 @@ def get_files(ip,filepath,log_foldername):
                 if directory:
                     print('Directory in SFTP server is mentioned')
                     print(log_foldername)
-                    #chan.send("/home/magicuser\n")
-                    chan.send("/home/magicuser/"+log_foldername+"\n")
+                    
+                    chan.send(<SFTP directory full address>)
                     chan.send("yes\n")
                     directory = False
                     time.sleep(10)
